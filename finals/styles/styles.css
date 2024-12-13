@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.login-container, .register-container {
+    max-width: 400px;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
+.container {
+    max-width: 400px;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
+h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 20px; /* Reduced margin for a tighter layout */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px; /* Add padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red; /* Style for error messages */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .login-container, .register-container {
+        width: 90%; /* Make it responsive */
+    }
+}
